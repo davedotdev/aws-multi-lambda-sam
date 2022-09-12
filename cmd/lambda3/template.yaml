@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  client_collector
+  
+  Sample SAM Template for client_collector
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 5
+
+Resources:
+  ClientCollectorFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: cmd/
+      Handler: handler
+      Runtime: provided.al2
+      Architectures:
+        - x86_64
+    Metadata:
+      BuildMethod: makefile
+Outputs:
+  ClientCollectorFunction:
+    Description: "Client_Collector function"
+    Value: !GetAtt ClientCollectorFunction.Arn
+  ClientCollectorIamRole:
+    Description: "ClientCollectorIAM Role"
+    Value: !GetAtt ClientCollectorFunction.Arn
