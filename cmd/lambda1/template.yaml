@@ -11,7 +11,7 @@ Globals:
     Timeout: 5
 
 Resources:
-  ClientCollectorFunction:
+  lambda1:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: cmd/
@@ -22,9 +22,9 @@ Resources:
     Metadata:
       BuildMethod: makefile
 Outputs:
-  ClientCollectorFunction:
-    Description: "Client_Collector function"
-    Value: !GetAtt ClientCollectorFunction.Arn
-  ClientCollectorIamRole:
-    Description: "ClientCollectorIAM Role"
-    Value: !GetAtt ClientCollectorFunction.Arn
+  lambda1:
+    Description: "lambda1 function"
+    Value: !GetAtt lambda1.Arn
+  lambda1IamRole:
+    Description: "lambda1IAM Role"
+    Value: !GetAtt lambda1IAMRole.Arn
