@@ -2,7 +2,7 @@ module lambda2
 
 go 1.18
 
-replace messaging => /Users/david/Documents/godev/src/github.com/packetsoftware/bkngappAPI/lambdas/messaging/pkg
+replace messaging => /Users/david/Documents/godev/src/github.com/davedotdev/multi-lambda-sam/pkg
 
 require github.com/aws/aws-lambda-go v1.34.1
 

@@ -14,7 +14,7 @@ func handler() error {
 }
 
 func main() {
-	clients := []common.ClientData{}
-	fmt.Println(clients)
+	people := []common.Person{}
+	fmt.Println(people)
 	lambda.Start(handler)
 }
