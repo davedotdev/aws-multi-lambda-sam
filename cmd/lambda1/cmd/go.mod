@@ -1,4 +1,4 @@
-module clientcollector
+module lambda1
 
 go 1.18
 

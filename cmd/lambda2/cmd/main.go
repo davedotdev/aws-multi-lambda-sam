@@ -9,7 +9,7 @@ import (
 )
 
 func handler() error {
-	fmt.Println("hello world")
+	fmt.Println("hello world from lambda2")
 	return nil
 }
 

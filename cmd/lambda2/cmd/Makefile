@@ -3,6 +3,6 @@
 build:
 	sam build
 
-build-ClientCollectorFunction:
+build-lambda2:
 	GOOS=linux go build
-	cp clientcollector $(ARTIFACTS_DIR)/bootstrap
+	cp lambda2 $(ARTIFACTS_DIR)/bootstrap
