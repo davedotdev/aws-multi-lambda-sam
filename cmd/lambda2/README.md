@@ -1,4 +1,4 @@
-# client_collector
+# Lambda 2
 
 This is a sample template for client_collector - Below is a brief explanation of what we have generated for you:
 
@@ -6,7 +6,7 @@ This is a sample template for client_collector - Below is a brief explanation of
 .
 ├── Makefile                    <-- Make to automate build
 ├── README.md                   <-- This instructions file
-├── hello-world                 <-- Source code for a lambda function
+├── cmd                         <-- Source code for a lambda function
 │   ├── main.go                 <-- Lambda function code
 │   └── main_test.go            <-- Unit tests
 └── template.yaml
